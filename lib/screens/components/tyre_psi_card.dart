@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tesla_animated_app/models/TyrePsi.dart';
+import 'package:tesla_animated_app/models/tyre_psi.dart';
 
 import '../../constanins.dart';
 

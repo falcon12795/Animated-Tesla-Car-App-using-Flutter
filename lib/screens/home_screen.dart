@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:tesla_animated_app/constanins.dart';
 import 'package:tesla_animated_app/home_controller.dart';
-import 'package:tesla_animated_app/models/TyrePsi.dart';
+import 'package:tesla_animated_app/models/tyre_psi.dart';
 
 import 'components/battery_status.dart';
 import 'components/door_lock.dart';
@@ -88,15 +88,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   void setupTyreAnimation() {
     _tyreAnimationController = AnimationController(
-        vsync: this, duration: Duration(milliseconds: 1200));
+        vsync: this, duration: const Duration(milliseconds: 1200));
     _animationTyre1Psi = CurvedAnimation(
-        parent: _tyreAnimationController, curve: Interval(0.34, 0.5));
+        parent: _tyreAnimationController, curve: const Interval(0.34, 0.5));
     _animationTyre2Psi = CurvedAnimation(
-        parent: _tyreAnimationController, curve: Interval(0.5, 0.66));
+        parent: _tyreAnimationController, curve: const Interval(0.5, 0.66));
     _animationTyre3Psi = CurvedAnimation(
-        parent: _tyreAnimationController, curve: Interval(0.66, 0.82));
+        parent: _tyreAnimationController, curve: const Interval(0.66, 0.82));
     _animationTyre4Psi = CurvedAnimation(
-        parent: _tyreAnimationController, curve: Interval(0.82, 1));
+        parent: _tyreAnimationController, curve: const Interval(0.82, 1));
     _tyreAnimations = [
       _animationTyre1Psi,
       _animationTyre2Psi,

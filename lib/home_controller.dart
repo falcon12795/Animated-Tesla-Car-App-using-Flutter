@@ -50,7 +50,7 @@ class HomeController extends ChangeNotifier {
       // as you can see we want to show those tyres a little bit later
       // Now  when the car on center after that we set isShowTyre = true
       Future.delayed(
-        Duration(milliseconds: 400),
+        const Duration(milliseconds: 400),
         () {
           isShowTyre = true;
           notifyListeners();
@@ -69,7 +69,7 @@ class HomeController extends ChangeNotifier {
       isShowTyreStatus = true;
       notifyListeners();
     } else {
-      Future.delayed(Duration(milliseconds: 400), () {
+      Future.delayed(const Duration(milliseconds: 400), () {
         isShowTyreStatus = false;
         notifyListeners();
       });
